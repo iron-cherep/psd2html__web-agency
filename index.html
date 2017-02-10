@@ -27,57 +27,240 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand" href="#">Logotype</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right" role="form">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
+          <ul class="nav nav-pills">
+            <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Проекты</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Услуги</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+            
+            <li class="nav__item"><a href="tel:88006009090" class="nav__link">8 (800) 600 90 90</a></li>
+            
+            <li class="nav__item"><a href="#" class="nav__link">Ru</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">En</a></li>
+          </ul>
         </div><!--/.navbar-collapse -->
       </div>
     </nav>
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
-      </div>
-    </div>
-
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+    <section class="page-header jumbotron">
+      <div class="container-fluid">
+        <h1 class="page-header__header">Новый уровень Вашего бизнеса</h1>
+        <p class="page-header__description">Стратегия, UI / UX дизайн, разработка, seo для торговых марок премиум-класса.</p>
+        <span class="bottom-pointer">Подробнее</span>
+      </div> <!-- конец container-fluid -->
+    </section>
+    
+    <div class="container-fluid">
+      
+      <section class="services row">
+        
+        <h2 class="services__header">Что мы делаем</h2>
+        
+        <article class="services__item">
+          <img src="img/icon-analitics.png" alt="график" class="services__icon">
+          <span class="services__item-header">Аналитика</span>
+          <p class="services__description">Консалтинг и аудит сайтов. Увеличим конверсию сайта компании, эффективность последующих рекламных кампаний за счет выявления и устранения технических и маркетинговых ошибок.</p>
+        </article>
+        <article class="services__item">
+          <img src="img/icon-chess.png" alt="шахматы" class="services__icon">
+          <span class="services__item-header">Стратегия</span>
+          <p class="services__description">Мы объединяем стратегическое мышление с дизайном для создания эффективной коммуникации с вашим брендом в онлайн-среде. Разработаем коммуникационные, медиа- и digital-стратегии. Составим план развития на год вперед.</p>
+        </article>
+        <article class="services__item">
+          <img src="img/icon-megaphone.png" alt="рупор" class="services__icon">
+          <span class="services__item-header">SMM</span>
+          <p class="services__description">Разрабатываем стратегию присутствия в new медиа, активации в социальных сетях, создаем контент-планы, обеспечиваем коммьюнити-менеджмент, работаем с блогерами, внедряем Social CRM, интегрируем банковский сервис в Facebook.</p>
+        </article>
+        <article class="services__item">
+          <img src="img/icon-techno.png" alt="дисплей" class="services__icon">
+          <span class="services__item-header">Технологии и продакшн</span>
+          <p class="services__description">Проектируем и разрабатываем корпоративные сайты на платформе 1С-Битрикс, мобильные приложения, веб-интерфейсы, в том числе интернет-банкинг и личные кабинеты. Обеспечиваем поддержку 24/7 и дальнейшее развитие вашего интернет-пространства.</p>
+        </article>
+        <article class="services__item">
+          <img src="img/icon-pencil.png" alt="карандаш" class="services__icon">
+          <span class="services__item-header">Дизайн</span>
+          <p class="services__description">Разработка дизайна любого уровня и сложности: адаптивный дизайн, дизайн мобильных приложений, создание UI Framework c возможностью дальнейшей миграции на любые платформы.</p>
+        </article>
+        
+        <span class="bottom-pointer">Проекты</span>
+        
+      </section>
+  </div> <!-- конец container-fluid -->   
+   
+  <section class="projects  container-fluid">    
+    
+      <article class="project-block  project-block--gazprom  row">
+        <img src="img/site-material.png" alt="" class="project-block__image">
+        <h2 class="project-block__header">ПАО «Газпром»</h2>
+        <ul class="project-block__list">
+          <li class="project-block__list-item">— Веб-сайт</li>        
+        </ul>
+        <button class="project-block__hero-button">Смотреть проект</button>      
+      </article>
+      
+      <article class="project-block  project-block--tinkoff  row">
+        <img src="img/phone.png" alt="" class="project-block__image">
+        <h2 class="project-block__header">Тинькофф Банк</h2>
+        <ul class="project-block__list">
+          <li class="project-block__list-item">— Брендинг</li>
+          <li class="project-block__list-item">— UI/UX дизайн</li>
+          <li class="project-block__list-item">— Разработка мобильного приложения для iOS</li>
+          <li class="project-block__list-item">— Веб-сайт</li>
+        </ul>
+        <button class="project-block__hero-button">Смотреть проект</button>
+      </article>
+      
+      <article class="project-block  project-block--adidas  row">
+        <img src="img/display.png" alt="" class="project-block__image">
+        <h2 class="project-block__header">Adidas</h2>
+        <ul class="project-block__list">
+          <li class="project-block__list-item">— Веб-сайт</li>
+          <li class="project-block__list-item">— Разработка мобильного приложения для iOS, Android и Windows</li>
+        </ul>
+        <button class="project-block__hero-button">Смотреть проект</button>
+      </article>     
+       
+      <article class="project-block  project-block--all  row">
+        <button class="project-block__hero-button  project-block__hero-button--light">Смотреть проект</button>
+      <article>
+      
+    </section> <!-- конец container-fluid -->
+    
+    <section class="reasons  container-fluid">      
+      <div class="reasons__wrapper  row">
+        
+        <h2 class="reasons__header"><span class="reason__header-six">6 </span>причин работать с нами</h2>
+        <article class="reasons__item">
+          <h3 class="reasons__item-header">Профессионализм</h3>
+          <p class="reasons__item-description">Мы нацелены развить ваш бизнес за счет технических решений, а не просто выполнить техническое задание.</p>
+        </article>
+        <article class="reasons__item">
+          <h3 class="reasons__item-header">Актуальность решений</h3>
+          <p class="reasons__item-description">Мы заботимся о том, чтобы ваш продукт оставался актуальным долгие годы, разрабатывая адаптивные и масштабируемые решения.</p>
+        </article>
+        <article class="reasons__item">
+          <h3 class="reasons__item-header">Победы</h3>
+          <p class="reasons__item-description">На нашем счету более 30 призовых мест в российских и международных ведущих отраслевых конкурсах веб-разработки.</p>
+        </article>
+        <article class="reasons__item">
+          <h3 class="reasons__item-header">Прозрачность</h3>
+          <p class="reasons__item-description">Сроки и бюджет разработки открыты и предсказуемы — мы заботимся об этом еще на этапе подписания договора.</p>
+        </article>
+        <article class="reasons__item">
+          <h3 class="reasons__item-header">Опыт работы с highload проектами</h3>
+          <p class="reasons__item-description">Мы разрабатываем веб-сервисы, способные выдерживать высокие нагрузки (до 10000 запросов/сек) и обеспечивать поддержку растущего количества пользователей.</p>
+        </article>
+        <article class="reasons__item">
+          <h3 class="reasons__item-header">Использование fullstack технологий</h3>
+          <p class="reasons__item-description">Мы открыты к новым технологиям, понимаем каждую из них и имеем представление о том, как развить веб-приложение от стадии проектирования до готового продукта.</p>
+        </article>
+        
+      </div> <!-- конец row -->      
+    </section> <!-- конец container-fluid -->
+    
+    <section class="customers  container-fluid">
+      
+      <article class="customers__list  row">
+        
+        <h2 class="customers__header">Наши клиенты</h2>
+        
+        <div class="customers__item">          
+          <img src="img/logo-tinkoff.png" alt="Тинькофф Банк" class="customers__logo">
         </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        
+        <div class="customers__item">          
+          <img src="img/logo-gazprom.png" alt="Газпром" class="customers__logo">
         </div>
-      </div>
+        
+        <div class="customers__item">          
+          <img src="img/logo-mu.png" alt="Manchester United" class="customers__logo">
+        </div>
+        
+        <div class="customers__item">          
+          <img src="img/logo-hermitage.png" alt="Эрмитаж" class="customers__logo">
+        </div>
+        
+        <div class="customers__item">          
+          <img src="img/logo-moleskine.png" alt="Moleskine" class="customers__logo">
+        </div>
+        
+        <div class="customers__item">                  
+          <img src="img/logo-starbucks.png" alt="Starbucks" class="customers__logo">
+        </div>
+        
+        <div class="customers__item">          
+          <img src="img/logo-audi.png" alt="Audi" class="customers__logo">
+        </div>
+        
+        <div class="customers__item">                  
+          <img src="img/logo-adidas.png" alt="Adidas" class="customers__logo">
+        </div>
+        
+        <div class="customers__item">          
+          <img src="img/logo-ginza.png" alt="Ginza Project" class="customers__logo">
+        </div>
+        
+        <div class="customers__item">          
+          <img src="img/logo-oscar.png" alt="Oscars" class="customers__logo">
+        </div>
+        
+        <div class="customers__item">          
+          <img src="img/logo-alfa.png" alt="Альфа Банк" class="customers__logo">
+        </div>
+        
+        <div class="customers__item">          
+          <img src="img/logo-showtime.png" alt="Showtime" class="customers__logo">
+        </div>
+        
+      </article> <!-- конец row -->      
+      
+      <div class="row">        
+        <p class="customers__hero-quote">Нам часто говорят: «Это лучше, чем я мог представить».<br>Мы отвечаем, что это просто хорошая работа.</p>        
+      </div> <!-- конец row --> 
+      
+      <section class="customers__slider-block  row">
+        <div class="customers__slider">
+        
+          <article class="customers__slider-item">          
+            <div class="customers__video-container">
+              <video class="customers__video"></video>
+            </div>
+            
+            <div class="customers__slider-info">
+              <p class="customers__person"></p>
+              <p class="customers__post"></p>
+            </div>
+          </article>               
+                  
+          <button class="customers__slider-button  customers__slider-button--previous"></button>
+          <button class="customers__slider-button  customers__slider-button--next"></button>        
+          
+        </div>  <!-- конец customers__slider -->
+      </section> <!-- конец row -->             
+    </section> <!-- конец container-fluid -->
+    
+    <section class="page-footer jumbotron">
+      <div class="container-fluid">
+        <h2 class="page-footer__header">Вы уже хотите пообщаться с нами?</h2>
+        <p class="page-footer__mail">hello@iwant.com</p>
+        <a href="tel:88006009090" class="page-footer__phone">8 (800) 600 90 90</a>
+        
+        <div class="page-header__social  row">
+          <ul class="page-header__social-list">
+            <li class="page-header__social-icon"><a href="#" class="page-header__social-link"></a></li>
+            <li class="page-header__social-icon"><a href="#" class="page-header__social-link"></a></li>
+            <li class="page-header__social-icon"><a href="#" class="page-header__social-link"></a></li>
+            <li class="page-header__social-icon"><a href="#" class="page-header__social-link"></a></li>            
+          </ul>
+        </div>        
+        
+      </div> <!-- конец container-fluid -->
+    </section>
 
-      <hr>
 
-      <footer>
-        <p>&copy; Company 2015</p>
-      </footer>
-    </div> <!-- /container -->       
         <script src="js/vendor/jquery-1.11.2.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/main.js"></script>
