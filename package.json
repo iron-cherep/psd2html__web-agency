@@ -1,7 +1,7 @@
 {
-  "name": "bootstrap3-boilerplate",
+  "name": "testAssignmentForHotels",
   "version": "0.1.0",
-  "description": "bootstrap installed via npm",
+  "description": "test assignment job",
   "author": "iron-cherep",
   "private": true,
   "devDependencies": {
