@@ -1,0 +1,28 @@
+.bottom-pointer {
+  position: relative;
+  top: -64px;
+  
+  // display: block;
+  display: none;
+  
+  font-size: 22px;
+  line-height: 20px;
+  font-weight: 300;
+  text-align: center;
+  color: white;
+  
+  opacity: 0.3;
+  
+  &::after {
+    position: absolute;
+    bottom: -74px; left: 50%;
+    
+    display: block;
+    height: 64px;
+    width: 1px;
+    
+    border: 1px solid white;
+    opacity: 0.3;
+    content: "";
+  }
+}

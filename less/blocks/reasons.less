@@ -1,0 +1,78 @@
+.reasons {
+  background-color: #f1f2f2;
+}
+
+.reasons__row {
+  margin-bottom: 80px;
+  
+  &:last-of-type {
+    margin-bottom: 150px;
+  }
+}
+
+.reasons__header {
+  position: relative;
+  z-index: 10;
+  
+  display: inline-block;
+  margin-top: 2.7em;
+  margin-bottom: 3.75em;
+
+  line-height: 56px;
+  text-align: center;
+  
+  background-color: transparent;
+}
+
+.reasons__header-symbol {
+  position: absolute;
+  top: -12rem; left: -7rem; z-index: -1;
+  
+  display: block;
+  width: 17rem;
+  height: 23rem;
+  
+  font-size: 0;
+  
+  background-color: red;
+  background: url("../img/six.png") top center no-repeat / contain;
+  
+  content: "";
+}
+
+.reasons__item {
+  display: table-cell;
+}
+
+.reasons__item-header {
+  position: relative;
+  
+  padding-left: 50px;
+  
+  
+  font-family: Roboto;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 32px;
+  
+  &::before {
+    position: absolute;
+    top: 50%; left: -10px; 
+    transform: translateY(-50%);
+    
+    display: block;
+    width: 45px;
+    height: 4px;
+    
+    border: 2px solid #e74c3c;
+    
+    content: "";
+  }
+
+}
+
+.reasons__item-description {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 32px;
+}

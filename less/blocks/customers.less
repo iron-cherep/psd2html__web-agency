@@ -1,0 +1,117 @@
+.customers {
+  
+}
+
+.customers__list {
+  
+}
+
+.customers__header {
+  margin-top: 180px;
+  margin-bottom: 100px;
+  
+  text-align: center;
+}
+
+.customers__item {
+  margin-bottom: 50px;
+  min-height: 182px;
+}
+
+.customers__logo {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  
+  max-height: 182px;
+}
+
+.customers__hero-quote {
+  position: relative;
+  
+  display: block;
+  margin-top: 20rem;
+  margin-bottom: 20rem;
+    
+  font-size: 34px;
+  font-weight: 300;
+  line-height: 55px;
+  text-align: center;
+  
+  &::before {
+    position: absolute;
+    top: -10rem; left: 50%; 
+    transform: translateX(-50%);
+    
+    display: block;
+    width: 45px;
+    height: 4px;
+    
+    border: 2px solid #e74c3c;
+    
+    content: "";
+  }
+  &::after {
+    position: absolute;
+    bottom: -10rem; left: 50%; 
+    transform: translateX(-50%);
+    
+    display: block;
+    width: 45px;
+    height: 4px;
+    
+    border: 2px solid #e74c3c;
+    
+    content: "";
+  }    
+}
+.customers__slider-item {
+  position: relative;
+  margin-bottom: 200px;  
+}
+
+/* vvv  выравнивание по вертикали в зависимости от наличия класса modernizr .flexbox */
+.flexbox .customers__slider-item {
+  display: flex;
+  flex-flow: row wrap;  
+  align-items: center;
+  
+  .customers__slider-info {
+    position: relative;
+    top: auto;
+    transform: none;
+  }
+}
+.customers__slider-info {
+  position: absolute;
+  top: 50%; right: 0;
+  transform: translateY(-50%);
+}
+/* ^^^ выравнивание по вертикали в зависимости от наличия класса modernizr .flexbox */
+
+.customers__video-container { 
+  min-height: 550px;
+  
+  background-image: linear-gradient(rgba(0, 0, 0, 0.43) 0%, rgba(0, 0, 0, 0.43) 100%), url("../img/video-preview.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.customers__person {  
+  margin-bottom: 0;
+  
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.customers__post {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 32px;
+}
+
+.customers__slider__button {
+  position: absolute;
+}
