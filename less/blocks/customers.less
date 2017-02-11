@@ -3,19 +3,19 @@
 }
 
 .customers__list {
-  
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .customers__header {
-  margin-top: 180px;
-  margin-bottom: 100px;
+  margin-top: 12%;
+  margin-bottom: 68px;
   
   text-align: center;
 }
 
 .customers__item {
-  margin-bottom: 50px;
-  min-height: 182px;
+  min-height: 265px;
 }
 
 .customers__logo {
@@ -23,24 +23,32 @@
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
   
-  max-height: 182px;
+  max-height: 265px;
+  
+  &--gazprom {
+    top: 35%;
+  }
+  &--ginza {
+    top: 56%;
+  }
 }
 
 .customers__hero-quote {
   position: relative;
   
   display: block;
-  margin-top: 20rem;
-  margin-bottom: 20rem;
+  margin-top: 6.4em;
+  margin-bottom: 8.4em;
     
   font-size: 34px;
   font-weight: 300;
   line-height: 55px;
   text-align: center;
+  letter-spacing: 0.1px;
   
   &::before {
     position: absolute;
-    top: -10rem; left: 50%; 
+    top: -10.2rem; left: 50%; 
     transform: translateX(-50%);
     
     display: block;
@@ -53,7 +61,7 @@
   }
   &::after {
     position: absolute;
-    bottom: -10rem; left: 50%; 
+    bottom: -10.6rem; left: 50%; 
     transform: translateX(-50%);
     
     display: block;
@@ -67,7 +75,8 @@
 }
 .customers__slider-item {
   position: relative;
-  margin-bottom: 200px;  
+  margin-bottom: 11.7%;  
+  padding-left: 15px;
 }
 
 /* vvv  выравнивание по вертикали в зависимости от наличия класса modernizr .flexbox */
@@ -90,12 +99,21 @@
 /* ^^^ выравнивание по вертикали в зависимости от наличия класса modernizr .flexbox */
 
 .customers__video-container { 
-  min-height: 550px;
+  width: 60.5%;
+  min-height: 553px;
+  padding-left: 0;
+  padding-right: 0;
   
   background-image: linear-gradient(rgba(0, 0, 0, 0.43) 0%, rgba(0, 0, 0, 0.43) 100%), url("../img/video-preview.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.customers__slider-info {
+  width: 39.5%;
+  padding-left: 5.9%;
+  padding-right: 10%;
 }
 
 .customers__person {  
@@ -104,9 +122,13 @@
   font-size: 19px;
   font-weight: 400;
   line-height: 32px;
+  letter-spacing: 0.2px;
 }
 
 .customers__post {
+  display: inline-block;
+  margin-top: 1.4em;
+  
   font-size: 17px;
   font-weight: 300;
   line-height: 32px;

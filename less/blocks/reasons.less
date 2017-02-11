@@ -3,19 +3,20 @@
 }
 
 .reasons__row {
-  margin-bottom: 80px;
+  margin-bottom: 5.2rem;
   
   &:last-of-type {
-    margin-bottom: 150px;
+    margin-bottom: 8.75%;
   }
 }
 
 .reasons__header {
   position: relative;
+  left: 1em;
   z-index: 10;
   
   display: inline-block;
-  margin-top: 2.7em;
+  margin-top: 2.9em;
   margin-bottom: 3.75em;
 
   line-height: 56px;
@@ -26,34 +27,46 @@
 
 .reasons__header-symbol {
   position: absolute;
-  top: -12rem; left: -7rem; z-index: -1;
+  top: -3.5em; left: -4em; 
+  z-index: -1;
   
   display: block;
-  width: 17rem;
-  height: 23rem;
+  width: 8.7em;
+  height: 6.5em;  
   
-  font-size: 0;
-  
-  background-color: red;
+  color: transparent;
+  pointer-events: none;  
+    
   background: url("../img/six.png") top center no-repeat / contain;
   
   content: "";
 }
 
-.reasons__item {
-  display: table-cell;
+.reasons__item {  
+  padding-right: 4em;
+  
+  &:first-of-type {
+    width: 34.6%;
+    padding-right: 5%;
+  }
+  &:last-of-type {
+    width: 66.6% - 34.6%;
+    padding-left: 2.4%;
+    padding-right: 2%;
+  }
 }
 
 .reasons__item-header {
   position: relative;
   
+  margin-bottom: 23px;
   padding-left: 50px;
-  
-  
+    
   font-family: Roboto;
   font-size: 19px;
   font-weight: 400;
   line-height: 32px;
+  letter-spacing: 0.2px;
   
   &::before {
     position: absolute;
@@ -75,4 +88,5 @@
   font-size: 17px;
   font-weight: 300;
   line-height: 32px;
+  letter-spacing: 0.2px;
 }
