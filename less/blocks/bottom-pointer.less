@@ -1,21 +1,22 @@
 .bottom-pointer {
-  position: relative;
-  top: -64px;
+  position: absolute;
+  bottom: 78px; left: 50%;
+  transform: translateX(-50%);
+  z-index: 30;
   
-  // display: block;
-  display: none;
+  display: block;
   
   font-size: 22px;
   line-height: 20px;
   font-weight: 300;
-  text-align: center;
   color: white;
   
   opacity: 0.3;
+  cursor: pointer;
   
   &::after {
     position: absolute;
-    bottom: -74px; left: 50%;
+    bottom: -4em; left: 50%;
     
     display: block;
     height: 64px;
@@ -25,4 +26,26 @@
     opacity: 0.3;
     content: "";
   }
+  
+  &--projects {
+    bottom: 62px;
+    
+    font-size: 18px;
+    line-height: 20px;
+    color: black;
+    
+    opacity: 0.46;
+    
+    &::after {
+      bottom: -62px;
+      
+      height: 40px;
+      
+      border-color: transparent;
+      border-right-color: black;
+      opacity: 0.46;      
+    }
+  }
+  
+
 }

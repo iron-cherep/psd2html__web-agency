@@ -1,8 +1,6 @@
 .project-block {
   position: relative;
   
-  // min-height: 70vh;
-  
   &--gazprom {
     background-color: #bdcbd7;
   }
@@ -100,8 +98,9 @@
   line-height: 34px;
 }
 
-
 .project-block__button {
+  position: relative;
+  
   display: inline-block;
   padding-top: 1.1em;
   padding-right: 3.1em;
@@ -129,7 +128,11 @@
     text-decoration: none;
     color: white;
     
-    background-color: black;    
+    background-color: black;
+    
+    .project-block__button-arrow path {
+      fill: white;
+    }
   }
   &--all {
     position: absolute;
@@ -143,7 +146,22 @@
     color: #303030;
     
     border-color: white;
-    background: white;      
-  }   
+    background: white;
 
+    .project-block__button-arrow path {
+      fill: black;
+    }      
+  }
 }
+
+.project-block__button-arrow {
+  position: absolute;
+  right: 0.5em; top: 50%;
+  transform: translateY(-50%);
+  
+  width: 2.5em;
+  height: 10px;
+  
+  transition: all 0.2s ease-in-out;  
+}
+

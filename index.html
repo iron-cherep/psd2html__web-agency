@@ -44,18 +44,38 @@
         </ul>
       </nav>
       
-      <div class="row">
-        <header class="page-header__header-wrapper  col-lg-6">
+      <div class="row  page-header__row">
+        <section class="page-header__header-wrapper  col-lg-6">
           <h1 class="page-header__header">Новый уровень Вашего бизнеса</h1>
           <p class="page-header__description">Стратегия, UI / UX дизайн, разработка, seo<br> для торговых марок премиум-класса.</p>
-        </header>
-        <span class="bottom-pointer  col-lg-12">Подробнее</span>
-      </div> <!-- конец container-fluid -->
+        </section>
+        
+        <span class="bottom-pointer" id="go-to-services">Подробнее</span>
+        
+        
+      </div> <!-- конец row -->
+      
+      <div class="page-header__figure">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="27" viewBox="0 0 25 27"><path d="M-11.5126 203.94L-9.45907 177.614L12.116599999999998 192.155ZM-7.74121 181.21L-9.2532 200.58800000000002L8.13934 191.91200000000003Z " fill="#8eb021" transform="matrix(1,0,0,1,12,-177)"></path></svg>
+      </div>
+      <div class="page-header__figure">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="25" viewBox="0 0 24 25"><path d="M148.46 827.131C143.823 831.7679999999999 136.279 831.7679999999999 131.642 827.132C127.005 822.495 127.005 814.9499999999999 131.642 810.313L130.243 808.915C124.836 814.323 124.836 823.122 130.244 828.53C135.651 833.937 144.45 833.937 149.858 828.53Z " fill="#e74c3c" transform="matrix(1,0,0,1,-126,-808)"></path></svg>
+      </div>
+      <div class="page-header__figure">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="24" viewBox="0 0 27 24"><path d="M1436.91 533.899L1423.9 510.921H1449.92ZM1427.34 512.942L1436.9099999999999 529.857L1446.4899999999998 512.942Z " fill="#3498db" transform="matrix(1,0,0,1,-1423,-510)"></path></svg>
+      </div>
+      <div class="page-header__figure">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="19" height="28" viewBox="0 0 19 28"><path d="M1832.67 290.31C1838.91 288.301 1845.6200000000001 291.745 1847.63 297.987C1849.64 304.22900000000004 1846.19 310.94300000000004 1839.95 312.951L1840.56 314.834C1847.84 312.491 1851.85 304.662 1849.51 297.382C1847.17 290.10200000000003 1839.34 286.085 1832.06 288.428Z " fill="#ffcd02" transform="matrix(1,0,0,1,-1832,-287)"></path></svg>
+      </div>
+      <div class="page-header__figure">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="31" viewBox="0 0 31 31"><path d="M1794.77 817.313L1770.6299999999999 823.781L1764.1699999999998 799.644L1788.3 793.177ZM1772.06 821.316L1792.3 815.89L1786.8799999999999 795.643L1766.6299999999999 801.067Z " fill="#8eb021" transform="matrix(1,0,0,1,-1764,-793)"></path></svg>
+      </div>
+      
     </header>
     
     <div class="container-fluid">
       
-      <section class="services  row">
+      <section class="services  row" id="services">
         
         <h2 class="services__header  col-lg-12">Что мы делаем</h2>
         
@@ -85,12 +105,12 @@
           <p class="services__description">Разработка дизайна любого уровня и сложности: адаптивный дизайн, дизайн мобильных приложений, создание UI Framework c возможностью дальнейшей миграции на любые платформы.</p>
         </article>
         
-        <span class="bottom-pointer">Проекты</span>
+        <span class="bottom-pointer  bottom-pointer--projects" id="go-to-projects">Проекты</span>
         
       </section>
   </div> <!-- конец container-fluid -->   
    
-  <section class="projects  container-fluid">    
+  <section class="projects  container-fluid" id="projects">    
     
       <article class="project-block  project-block--gazprom  row">
         <img src="img/site-material.png" alt="" class="project-block__image  project-block__image--gazprom">
@@ -99,7 +119,9 @@
           <ul class="project-block__list">
             <li class="project-block__list-item">— Веб-сайт</li>        
           </ul>
-          <a class="project-block__button">Смотреть проект</a>      
+          <a class="project-block__button">Смотреть проект
+            <svg class="project-block__button-arrow" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="9" viewBox="0 0 30 9"><path d="M1628.01 2450.3H1650.22C1649.15 2449 1648.6200000000001 2448.15 1648.56 2446.9900000000002C1651 2448.9900000000002 1654.1599999999999 2450.0200000000004 1657.99 2451.0000000000005C1654.16 2451.9300000000003 1651.14 2453.0700000000006 1648.56 2455.0000000000005C1648.73 2453.7500000000005 1649.1699999999998 2452.9900000000002 1650.26 2451.6100000000006H1628.01Z " fill="#000000" transform="matrix(1,0,0,1,-1628,-2446)"></path></svg>
+          </a>      
         </div>
       </article>
       
@@ -113,7 +135,9 @@
             <li class="project-block__list-item">— Разработка мобильного приложения для iOS</li>
             <li class="project-block__list-item">— Веб-сайт</li>
           </ul>
-          <a class="project-block__button">Смотреть проект</a>
+          <a class="project-block__button">Смотреть проект
+            <svg class="project-block__button-arrow" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="9" viewBox="0 0 30 9"><path d="M1628.01 2450.3H1650.22C1649.15 2449 1648.6200000000001 2448.15 1648.56 2446.9900000000002C1651 2448.9900000000002 1654.1599999999999 2450.0200000000004 1657.99 2451.0000000000005C1654.16 2451.9300000000003 1651.14 2453.0700000000006 1648.56 2455.0000000000005C1648.73 2453.7500000000005 1649.1699999999998 2452.9900000000002 1650.26 2451.6100000000006H1628.01Z " fill="#000000" transform="matrix(1,0,0,1,-1628,-2446)"></path></svg>
+          </a>
         </div>
       </article>
       
@@ -125,12 +149,16 @@
             <li class="project-block__list-item">— Веб-сайт</li>
             <li class="project-block__list-item">— Разработка мобильного приложения для iOS, Android и Windows</li>
           </ul>
-          <a class="project-block__button">Смотреть проект</a>
+          <a class="project-block__button">Смотреть проект
+            <svg class="project-block__button-arrow" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="9" viewBox="0 0 30 9"><path d="M1628.01 2450.3H1650.22C1649.15 2449 1648.6200000000001 2448.15 1648.56 2446.9900000000002C1651 2448.9900000000002 1654.1599999999999 2450.0200000000004 1657.99 2451.0000000000005C1654.16 2451.9300000000003 1651.14 2453.0700000000006 1648.56 2455.0000000000005C1648.73 2453.7500000000005 1649.1699999999998 2452.9900000000002 1650.26 2451.6100000000006H1628.01Z " fill="#000000" transform="matrix(1,0,0,1,-1628,-2446)"></path></svg>
+          </a>
         </div>
       </article>     
        
       <article class="project-block  project-block--all  row">
-        <a class="project-block__button  project-block__button--all">Все наши проекты</a>
+        <a class="project-block__button  project-block__button--all">Все наши проекты
+          <svg class="project-block__button-arrow" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="9" viewBox="0 0 30 9"><path d="M1628.01 2450.3H1650.22C1649.15 2449 1648.6200000000001 2448.15 1648.56 2446.9900000000002C1651 2448.9900000000002 1654.1599999999999 2450.0200000000004 1657.99 2451.0000000000005C1654.16 2451.9300000000003 1651.14 2453.0700000000006 1648.56 2455.0000000000005C1648.73 2453.7500000000005 1649.1699999999998 2452.9900000000002 1650.26 2451.6100000000006H1628.01Z " fill="#ffffff" transform="matrix(1,0,0,1,-1628,-2446)"></path></svg>
+        </a>
       </article>
       
     </section> <!-- конец container-fluid -->
@@ -274,6 +302,7 @@
 
         <script src="js/vendor/jquery-1.11.2.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/smoothscroll.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
