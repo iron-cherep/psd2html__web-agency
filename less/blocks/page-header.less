@@ -1,35 +1,66 @@
-.page-header {
-  min-height: 80vh;  
-  
-  background-image: linear-gradient(rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%), url("../img/bg-hero.jpg");
+.page-header {  
+  background-image: url("../img/bg-hero.jpg");
   background-size: cover;
   background-position: center;
+    
+  margin-top: 0;
+  margin-bottom: 0;
   
-  @media (min-width: @screen-md) {
-    margin-top: 0;
-    margin-bottom: 0;
+  @media (max-width: 767px) {
+    padding-top: 140px;
   }
 
 }
 
 .page-header__header {
-  margin-top: 19%;
-  margin-bottom: 7%;
+  width: 60%;
+  margin-top: 10%;
+  margin-bottom: 3%;
+  padding-right: 15px;  
+  padding-left: 15px;
   
-  font-size: 90px;
-  line-height: 110px;
+  font-size: 40px;
+  line-height: 1.222;
   text-transform: uppercase;
   color: white;
+  
+  @media (max-width: @screen-sm) {
+    width: 100%;
+    font-size: 30px;
+  }
+  @media (min-width: @screen-lg) {
+    font-size: 70px;
+  }
+  @media (min-width: @screen-hd) {
+    width: 50%;
+    margin-top: 9.4%;
+    margin-bottom: 3.2%;
+    
+    font-size: 90px;
+  }
 }
 
 .page-header__description {
-  margin-bottom: 35.5%;
+  margin-bottom: 15%;
+  padding-right: 15px;
+  padding-left: 15px;
   
-  font-size: 34px;
-  line-height: 55px;
+  font-size: 24px;
+  line-height: 26px;
   letter-spacing: 0.2px;
   font-weight: 300;
   color: #ffffff;
+  
+  @media (max-width: @screen-sm-max) {
+    margin-bottom: 25%;
+  }
+  @media (min-width: @screen-lg) {
+    font-size: 34px;
+    line-height: 55px;
+  }
+  @media (min-width: @screen-hd) {
+    margin-bottom: 17.05%;
+  }
 }
 
 .page-header__row {
@@ -43,24 +74,33 @@
   
   opacity: 0.65;  
   
+  &:nth-of-type(odd) {
+    animation: rotating 20s linear infinite;
+  }
+  &:nth-of-type(even) {
+    animation: rotating-back 10s linear infinite;  
+  }
+  
   &:nth-of-type(1) {
     left: -0.5%; top: 18%;
-    // animation: rotating 10s linear infinite;
   }
   &:nth-of-type(2) {
     left: 6.5%; bottom: 15%;
-    // animation: rotating-back 10s linear infinite;    
   }
   &:nth-of-type(3) {
     left: 74.7%; top: 52%;
-    // animation: rotating 10s linear infinite;
   }
   &:nth-of-type(4) {
     right: 2.8%; top: 29%; 
-    // animation: rotating-back 10s linear infinite;
   }
   &:nth-of-type(5) {
     right: 5.8%; bottom: 16%; 
-    // animation: rotating 10s linear infinite;
+  }  
+  
+  @media (max-width: @screen-md-max) {
+    &:nth-of-type(5),
+    &:nth-of-type(2) {
+      display: none;
+    }
   }
 }

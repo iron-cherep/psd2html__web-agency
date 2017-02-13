@@ -1,7 +1,33 @@
+
+// задаёт отступы по макету для контейнера bootstrap
 .container-fluid {
   
   @media (min-width: @screen-md) {
+    padding-right: @custom-container-padding * 0.5;
+    padding-left: @custom-container-padding * 0.5; 
+  }
+  @media (min-width: @screen-xl) {
     padding-right: @custom-container-padding;
     padding-left: @custom-container-padding;
   }
+
 }
+
+// добавляет классы колонок для вьюпорта до 480px
+@media (max-width: 479px) { 
+   .col-xxs-4 {
+      display:block;
+      float:left;
+      width: 100% / 3;
+   }
+   .col-xxs-12 {
+      display:block;
+      float:left;
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-left: 0; //без offset
+   }
+}
+
+.nobr	{ white-space:nowrap; }

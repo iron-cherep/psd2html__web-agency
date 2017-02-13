@@ -1,5 +1,6 @@
 .customers {
-  
+  position: relative;
+  z-index: 1;
 }
 
 .customers__list {
@@ -8,14 +9,29 @@
 }
 
 .customers__header {
-  margin-top: 12%;
-  margin-bottom: 68px;
+  margin-top: 2em;
+  margin-bottom: 2em;
   
+  font-size: 26px;
   text-align: center;
+  
+  @media (min-width: @screen-md) {
+    margin-top: 12%;
+    margin-bottom: 68px;
+    
+    font-size: 48px;
+  }
 }
 
 .customers__item {
-  min-height: 265px;
+  min-height: 130px;
+  
+  @media (min-width: @screen-xs) {
+    min-height: 150px;
+  }
+  @media (min-width: @screen-lg) {
+    min-height: 265px;
+  }
 }
 
 .customers__logo {
@@ -32,20 +48,44 @@
   &--ginza {
     top: 56%;
   }
+  
+  @media (max-width: @screen-sm-max) {
+    width: 60%;
+    height: auto;
+    
+    &--gazprom {
+      top: 40%;
+    }
+  }
+  @media (max-width: @screen-md-max) {
+    width: 80%;
+    height: auto;
+  }
 }
 
 .customers__hero-quote {
   position: relative;
   
   display: block;
-  margin-top: 6.4em;
-  margin-bottom: 8.4em;
-    
-  font-size: 34px;
+  margin-top: 8em;
+  margin-bottom: 8em;
+  padding-right: 15px;
+  padding-left: 15px;
+  
+  font-size: 24px;
+  line-height: 26px;
+
   font-weight: 300;
-  line-height: 55px;
   text-align: center;
   letter-spacing: 0.1px;
+  
+  @media (min-width: @screen-lg) {
+    margin-top: 6.4em;
+    margin-bottom: 8.4em;
+
+    font-size: 34px;
+    line-height: 55px;
+  }
   
   &::before {
     position: absolute;
@@ -73,15 +113,28 @@
     
     content: "";
   }    
+  
+  @media (max-width: @screen-md-max) {
+    &::before {
+      top: -6rem;
+    }
+    &::after {
+      bottom: -6rem;
+    }
+  }
 }
 .customers__slider {
   position: relative;
   
-  margin-bottom: 12.7%;    
+  @media (min-width: @screen-xs) {
+    margin-bottom: 12.7%;    
+  }
 }
 .customers__slider-item {
   position: relative;
   padding-left: 15px;
+  ///проверить на 1900px! vvv
+  padding-right: 15px;
 }
 
 /* vvv  выравнивание по вертикали в зависимости от наличия класса modernizr .flexbox */
@@ -104,44 +157,114 @@
 /* ^^^ выравнивание по вертикали в зависимости от наличия класса modernizr .flexbox */
 
 .customers__video-container { 
-  width: 60.5%;
-  min-height: 553px;
+  position: relative;
+  
+  width: 61%;
+  min-height: 35vh;
   padding-left: 0;
   padding-right: 0;
   
-  background-image: linear-gradient(rgba(0, 0, 0, 0.43) 0%, rgba(0, 0, 0, 0.43) 100%), url("../img/video-preview.jpg");
+  background-image: url("../img/video-preview.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  
+  @media (min-width: @screen-lg) {
+    min-height: 553px;
+  }
+  @media (max-width: 479px) {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.customers__video-button {
+  position: absolute;
+  top: 50%; left: 51%;
+  transform: translate(-50%, -50%);
+  
+  display: block;
+  padding-top: 60px;
+  
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 20px;
+  color: white;
+  
+  background: url("../img/button-play.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+
+  
+  transition: opacity 0.2s ease-in-out;
+  
+  cursor: pointer; 
+  
+  @media (min-width: @screen-lg) {
+    padding-top: 208px;
+
+    font-size: 34px;
+    line-height: 32px;
+    
+    background-size: 161px 161px;
+  }
+  
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 .customers__slider-info {
-  width: 39.5%;
+  width: 39%;
+  padding-right: 9%;
   padding-left: 5.9%;
-  padding-right: 10%;
+  
+  @media (max-width: 479px) {
+    width: 100%;
+    margin-top: 3em;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+  }
 }
 
 .customers__person {  
   margin-bottom: 0;
   
   font-size: 19px;
+  line-height: 22px;
   font-weight: 400;
-  line-height: 32px;
   letter-spacing: 0.2px;
+
+  @media (min-width: @screen-md) {
+    line-height: 32px;
+  }
 }
 
 .customers__post {
   display: inline-block;
-  margin-top: 1.4em;
+  margin-top: 0.5em;
+  padding-right: 2em;
   
-  font-size: 17px;
+  font-size: 16px;
+  line-height: 18px;
   font-weight: 300;
-  line-height: 32px;
+  letter-spacing: 0.3px;
+  
+  @media (min-width: @screen-md) {
+    margin-top: 1.3em;
+    padding-right: 0em;
+    
+    font-size: 17px;
+    line-height: inherit;
+  }
 }
 
 .customers__slider-button {
   position: absolute;
-  top: 50%; 
+  bottom: -30px; 
   
   width: 27px;
   height: 110px;
@@ -149,14 +272,61 @@
   border: none;
   border-radius: 0;
   background-color: transparent;
-  background: url("../img/icon-arrow-right.svg") center no-repeat / cover;
+  background-image: url("../img/icon-arrow-right.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   
+  transition: opacity 0.2s ease-in-out;
+
   &--previous {
-    left: -30px;
-    transform: scaleX(-1) translateY(-50%);
+    display: none;
   }
   &--next {
-    right: 0;
+    right: 30px;
     transform: translateY(-50%);
+  }
+  &:hover {
+    opacity: 0.5;
+  }
+  
+  @media (min-width: @screen-xs) {
+    &--next {
+      top: 50%; 
+      transform: translateY(-50%);
+    }
+  }
+  @media (min-width: @screen-md) {
+    &--next {
+      right: 15px;
+    }
+  }
+}
+
+.customers__figure {
+  position: absolute;
+  z-index: -1;
+    
+  &:nth-of-type(odd) {
+    animation: rotating 20s linear infinite;
+  }
+  &:nth-of-type(even) {
+    animation: rotating-back 10s linear infinite;  
+  }
+  
+  &:nth-of-type(1) {
+    bottom: 33.6%; left: 5%;
+  }
+  &:nth-of-type(2) {
+    bottom: 3%; left: 13%;
+  }
+  &:nth-of-type(3) {
+    bottom: 33%; left: 72%;
+  }
+  &:nth-of-type(4) {
+    bottom: 9%; left: 70.5%;
+  }
+  &:nth-of-type(5) {
+    bottom: 26%; right: 3.6%;
   }
 }

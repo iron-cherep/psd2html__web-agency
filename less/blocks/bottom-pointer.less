@@ -1,49 +1,77 @@
 .bottom-pointer {
   position: absolute;
-  bottom: 78px; left: 50%;
+  bottom: 23px; left: 50%;
   transform: translateX(-50%);
   z-index: 30;
   
   display: block;
   
-  font-size: 22px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 16px;
   font-weight: 300;
   color: white;
   
   opacity: 0.3;
   cursor: pointer;
   
+  @media (min-width: @screen-xl) {
+    bottom: 75px;
+    
+    font-size: 22px;
+    line-height: 20px;
+  }
+  
   &::after {
     position: absolute;
-    bottom: -4em; left: 50%;
+    bottom: -2em; left: 50%;
+    transform: translateX(-50%);
     
     display: block;
-    height: 64px;
+    height: 30px;
     width: 1px;
     
     border: 1px solid white;
     opacity: 0.3;
     content: "";
+
+    @media (min-width: @screen-xl) {
+      bottom: -3.8em; 
+      
+      height: 64px;
+    }
   }
   
   &--projects {
-    bottom: 62px;
+    bottom: 32px; 
     
-    font-size: 18px;
-    line-height: 20px;
+    font-size: 15px;
+    line-height: 15px;
     color: black;
     
     opacity: 0.46;
     
+    @media (min-width: @screen-xl) {      
+      bottom: 55px;
+
+      font-size: 18px;
+      line-height: 20px;
+    }
+    
     &::after {
-      bottom: -62px;
+      bottom: -32px;
+      transform: translateX(-50%);
       
-      height: 40px;
+      height: 30px;
       
       border-color: transparent;
       border-right-color: black;
-      opacity: 0.46;      
+      opacity: 0.46;
+      
+      @media (min-width: @screen-xl) {
+        bottom: -55px;
+
+        height: 40px;
+      }      
     }
   }
   

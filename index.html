@@ -22,16 +22,14 @@
     <header class="page-header  container-fluid">
       
       <nav class="navigation  row">
-        <div class="navigation__header  col-lg-2">
+        <div class="navigation__header  col-sm-2">
           <a class="navigation__logo" href="#">Logotype</a>
-          <button class="navigation__button">
+          <button class="navigation__button" id="navbar-button">
             <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+            <span class="navigation__button-bar" id="navbar-icon"></span>
           </button>
         </div>        
-        <ul class="navigation__menu  col-lg-10">
+        <ul class="navigation__menu  col-sm-10" id="navbar">
           <li class="navigation__item  navigation__item--wide"><a href="#" class="navigation__link">О нас</a></li>
           <li class="navigation__item  navigation__item--wide"><a href="#" class="navigation__link">Проекты</a></li>
           <li class="navigation__item  navigation__item--wide"><a href="#" class="navigation__link">Услуги</a></li>
@@ -45,7 +43,7 @@
       </nav>
       
       <div class="row  page-header__row">
-        <section class="page-header__header-wrapper  col-lg-6">
+        <section class="page-header__header-wrapper">
           <h1 class="page-header__header">Новый уровень Вашего бизнеса</h1>
           <p class="page-header__description">Стратегия, UI / UX дизайн, разработка, seo<br> для торговых марок премиум-класса.</p>
         </section>
@@ -54,23 +52,15 @@
         
         
       </div> <!-- конец row -->
-      
-      <div class="page-header__figure">
-        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="27" viewBox="0 0 25 27"><path d="M-11.5126 203.94L-9.45907 177.614L12.116599999999998 192.155ZM-7.74121 181.21L-9.2532 200.58800000000002L8.13934 191.91200000000003Z " fill="#8eb021" transform="matrix(1,0,0,1,12,-177)"></path></svg>
-      </div>
-      <div class="page-header__figure">
-        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="25" viewBox="0 0 24 25"><path d="M148.46 827.131C143.823 831.7679999999999 136.279 831.7679999999999 131.642 827.132C127.005 822.495 127.005 814.9499999999999 131.642 810.313L130.243 808.915C124.836 814.323 124.836 823.122 130.244 828.53C135.651 833.937 144.45 833.937 149.858 828.53Z " fill="#e74c3c" transform="matrix(1,0,0,1,-126,-808)"></path></svg>
-      </div>
-      <div class="page-header__figure">
-        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="24" viewBox="0 0 27 24"><path d="M1436.91 533.899L1423.9 510.921H1449.92ZM1427.34 512.942L1436.9099999999999 529.857L1446.4899999999998 512.942Z " fill="#3498db" transform="matrix(1,0,0,1,-1423,-510)"></path></svg>
-      </div>
-      <div class="page-header__figure">
-        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="19" height="28" viewBox="0 0 19 28"><path d="M1832.67 290.31C1838.91 288.301 1845.6200000000001 291.745 1847.63 297.987C1849.64 304.22900000000004 1846.19 310.94300000000004 1839.95 312.951L1840.56 314.834C1847.84 312.491 1851.85 304.662 1849.51 297.382C1847.17 290.10200000000003 1839.34 286.085 1832.06 288.428Z " fill="#ffcd02" transform="matrix(1,0,0,1,-1832,-287)"></path></svg>
-      </div>
-      <div class="page-header__figure">
-        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="31" viewBox="0 0 31 31"><path d="M1794.77 817.313L1770.6299999999999 823.781L1764.1699999999998 799.644L1788.3 793.177ZM1772.06 821.316L1792.3 815.89L1786.8799999999999 795.643L1766.6299999999999 801.067Z " fill="#8eb021" transform="matrix(1,0,0,1,-1764,-793)"></path></svg>
-      </div>
-      
+        
+        <!-- частицы -->
+        <svg class="page-header__figure" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="27" viewBox="0 0 25 27"><path d="M-11.5126 203.94L-9.45907 177.614L12.116599999999998 192.155ZM-7.74121 181.21L-9.2532 200.58800000000002L8.13934 191.91200000000003Z " fill="#8eb021" transform="matrix(1,0,0,1,12,-177)"></path></svg>
+        <svg class="page-header__figure" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="25" viewBox="0 0 24 25"><path d="M148.46 827.131C143.823 831.7679999999999 136.279 831.7679999999999 131.642 827.132C127.005 822.495 127.005 814.9499999999999 131.642 810.313L130.243 808.915C124.836 814.323 124.836 823.122 130.244 828.53C135.651 833.937 144.45 833.937 149.858 828.53Z " fill="#e74c3c" transform="matrix(1,0,0,1,-126,-808)"></path></svg>
+        <svg class="page-header__figure" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="24" viewBox="0 0 27 24"><path d="M1436.91 533.899L1423.9 510.921H1449.92ZM1427.34 512.942L1436.9099999999999 529.857L1446.4899999999998 512.942Z " fill="#3498db" transform="matrix(1,0,0,1,-1423,-510)"></path></svg>
+        <svg class="page-header__figure" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="19" height="28" viewBox="0 0 19 28"><path d="M1832.67 290.31C1838.91 288.301 1845.6200000000001 291.745 1847.63 297.987C1849.64 304.22900000000004 1846.19 310.94300000000004 1839.95 312.951L1840.56 314.834C1847.84 312.491 1851.85 304.662 1849.51 297.382C1847.17 290.10200000000003 1839.34 286.085 1832.06 288.428Z " fill="#ffcd02" transform="matrix(1,0,0,1,-1832,-287)"></path></svg>
+        <svg class="page-header__figure" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="31" viewBox="0 0 31 31"><path d="M1794.77 817.313L1770.6299999999999 823.781L1764.1699999999998 799.644L1788.3 793.177ZM1772.06 821.316L1792.3 815.89L1786.8799999999999 795.643L1766.6299999999999 801.067Z " fill="#8eb021" transform="matrix(1,0,0,1,-1764,-793)"></path></svg>
+        <!-- конец частиц -->
+
     </header>
     
     <div class="container-fluid">
@@ -79,33 +69,39 @@
         
         <h2 class="services__header  col-lg-12">Что мы делаем</h2>
         
-        <article class="services__item  col-lg-4">
+        <div class="services__item  col-xs-12 col-lg-4">
           <img src="img/icon-analitics.png" alt="график" class="services__icon">
           <span class="services__item-header">Аналитика</span>
           <p class="services__description">Консалтинг и аудит сайтов. Увеличим конверсию сайта компании, эффективность последующих рекламных кампаний за счет выявления и устранения технических и маркетинговых ошибок.</p>
-        </article>
-        <article class="services__item  col-lg-4">
+        </div>
+        <div class="services__item  col-xs-12 col-lg-4">
           <img src="img/icon-chess.png" alt="шахматы" class="services__icon">
           <span class="services__item-header">Стратегия</span>
           <p class="services__description">Мы объединяем стратегическое мышление с дизайном для создания эффективной коммуникации с вашим брендом в онлайн-среде. Разработаем коммуникационные, медиа- и digital-стратегии.<br> Составим план развития на год вперед.</p>
-        </article>
-        <article class="services__item  col-lg-4">
+        </div>
+        <div class="services__item  col-xs-12 col-lg-4">
           <img src="img/icon-megaphone.png" alt="рупор" class="services__icon">
           <span class="services__item-header">SMM</span>
           <p class="services__description">Разрабатываем стратегию присутствия в new медиа, активации<br> в социальных сетях, создаем контент-планы, обеспечиваем коммьюнити-менеджмент, работаем с блогерами, внедряем Social CRM, интегрируем банковский сервис в Facebook.</p>
-        </article>
-        <article class="services__item  col-lg-4">
+        </div>
+        <div class="services__item  col-xs-12 col-lg-4">
           <img src="img/icon-techno.png" alt="дисплей" class="services__icon">
           <span class="services__item-header">Технологии и продакшн</span>
           <p class="services__description">Проектируем и разрабатываем корпоративные сайты на платформе 1С-Битрикс, мобильные приложения, веб-интерфейсы, в том числе интернет-банкинг и личные кабинеты. Обеспечиваем поддержку 24/7 и дальнейшее развитие вашего интернет-пространства.</p>
-        </article>
-        <article class="services__item  col-lg-4">
+        </div>
+        <div class="services__item  col-xs-12 col-lg-4">
           <img src="img/icon-pencil.png" alt="карандаш" class="services__icon">
           <span class="services__item-header">Дизайн</span>
           <p class="services__description">Разработка дизайна любого уровня и сложности: адаптивный дизайн, дизайн мобильных приложений, создание UI Framework c возможностью дальнейшей миграции на любые платформы.</p>
-        </article>
+        </div>
         
         <span class="bottom-pointer  bottom-pointer--projects" id="go-to-projects">Проекты</span>
+        
+        <svg class="services__figure" xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31"><path fill="#e6e6e6" d="M30.8 24.3L6.6 30.8.2 6.6l24-6.4zM8 28.3L28.4 23 23 2.5 2.5 8z"/></svg>
+        <svg class="services__figure" xmlns="http://www.w3.org/2000/svg" width="19" height="28" viewBox="0 0 19 28"><path fill="#e6e6e6" d="M.7 3.3c6.2-2 13 1.5 15 7.7S14 24 8 26l.6 1.8c7.2-2.3 11.3-10 9-17.4C15 3 7.2-1 0 1.4z"/></svg>
+        <svg class="services__figure" xmlns="http://www.w3.org/2000/svg" width="25" height="27" viewBox="0 0 25 27"><path fill="#e6e6e6" d="M.5 27L2.5.5 24 15.2zM4.3 4L2.8 23.6 20 15z"/></svg>
+        <svg class="services__figure" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"><path fill="#e6e6e6" d="M22.5 19c-4.7 4.8-12.2 4.8-17 0C1 14.6 1 7 5.6 2.4L4.3 1c-5.4 5.3-5.4 14 0 19.5C9.7 26 18.5 26 24 20.5z"/></svg>
+        <svg class="services__figure" xmlns="http://www.w3.org/2000/svg" width="25" height="27" viewBox="0 0 25 27"><path fill="#e6e6e6" d="M.5 27L2.5.5 24 15.2zM4.3 4L2.8 23.6 20 15z"/></svg>
         
       </section>
   </div> <!-- конец container-fluid -->   
@@ -114,20 +110,20 @@
     
       <article class="project-block  project-block--gazprom  row">
         <img src="img/site-material.png" alt="" class="project-block__image  project-block__image--gazprom">
-        <div class="project-block__info  project-block__info--gazprom  col-lg-3 col-lg-offset-9">
+        <div class="project-block__info  project-block__info--gazprom  col-xxs-12 col-xs-5 col-xs-offset-7 col-lg-3 col-lg-offset-9">
           <h2 class="project-block__header">ПАО «Газпром»</h2>
           <ul class="project-block__list">
             <li class="project-block__list-item">— Веб-сайт</li>        
           </ul>
           <a class="project-block__button">Смотреть проект
-            <svg class="project-block__button-arrow" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="9" viewBox="0 0 30 9"><path d="M1628.01 2450.3H1650.22C1649.15 2449 1648.6200000000001 2448.15 1648.56 2446.9900000000002C1651 2448.9900000000002 1654.1599999999999 2450.0200000000004 1657.99 2451.0000000000005C1654.16 2451.9300000000003 1651.14 2453.0700000000006 1648.56 2455.0000000000005C1648.73 2453.7500000000005 1649.1699999999998 2452.9900000000002 1650.26 2451.6100000000006H1628.01Z " fill="#000000" transform="matrix(1,0,0,1,-1628,-2446)"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="project-block__button-arrow" viewBox="0 0 30 9"><path d="M0 4.3h22.2c-1-1.3-1.6-2-1.6-3.3C23 3 26.2 4 30 5c-3.8 1-7 2-9.4 4 0-1.2.6-2 1.7-3.4H0z"/></svg>
           </a>      
         </div>
       </article>
       
       <article class="project-block  project-block--tinkoff  row">
         <img src="img/phone.png" alt="" class="project-block__image  project-block__image--tinkoff">
-        <div class="project-block__info  project-block__info--tinkoff  col-lg-5 col-lg-offset-1">
+        <div class="project-block__info  project-block__info--tinkoff  col-xxs-12 col-xs-5 col-xs-offset-1">
           <h2 class="project-block__header">Тинькофф Банк</h2>
           <ul class="project-block__list">
             <li class="project-block__list-item">— Брендинг</li>
@@ -136,29 +132,37 @@
             <li class="project-block__list-item">— Веб-сайт</li>
           </ul>
           <a class="project-block__button">Смотреть проект
-            <svg class="project-block__button-arrow" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="9" viewBox="0 0 30 9"><path d="M1628.01 2450.3H1650.22C1649.15 2449 1648.6200000000001 2448.15 1648.56 2446.9900000000002C1651 2448.9900000000002 1654.1599999999999 2450.0200000000004 1657.99 2451.0000000000005C1654.16 2451.9300000000003 1651.14 2453.0700000000006 1648.56 2455.0000000000005C1648.73 2453.7500000000005 1649.1699999999998 2452.9900000000002 1650.26 2451.6100000000006H1628.01Z " fill="#000000" transform="matrix(1,0,0,1,-1628,-2446)"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="project-block__button-arrow" viewBox="0 0 30 9"><path d="M0 4.3h22.2c-1-1.3-1.6-2-1.6-3.3C23 3 26.2 4 30 5c-3.8 1-7 2-9.4 4 0-1.2.6-2 1.7-3.4H0z"/></svg>
           </a>
         </div>
       </article>
       
       <article class="project-block  project-block--adidas  row">
         <img src="img/display.png" alt="" class="project-block__image  project-block__image--adidas">
-        <div class="project-block__info  project-block__info--adidas  col-lg-7  col-lg-offset-5">
+        <div class="project-block__info  project-block__info--adidas  col-xxs-12 col-xs-7 col-xs-offset-5">
           <h2 class="project-block__header">Adidas</h2>
           <ul class="project-block__list">
             <li class="project-block__list-item">— Веб-сайт</li>
             <li class="project-block__list-item">— Разработка мобильного приложения для iOS, Android и Windows</li>
           </ul>
           <a class="project-block__button">Смотреть проект
-            <svg class="project-block__button-arrow" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="9" viewBox="0 0 30 9"><path d="M1628.01 2450.3H1650.22C1649.15 2449 1648.6200000000001 2448.15 1648.56 2446.9900000000002C1651 2448.9900000000002 1654.1599999999999 2450.0200000000004 1657.99 2451.0000000000005C1654.16 2451.9300000000003 1651.14 2453.0700000000006 1648.56 2455.0000000000005C1648.73 2453.7500000000005 1649.1699999999998 2452.9900000000002 1650.26 2451.6100000000006H1628.01Z " fill="#000000" transform="matrix(1,0,0,1,-1628,-2446)"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="project-block__button-arrow" viewBox="0 0 30 9"><path d="M0 4.3h22.2c-1-1.3-1.6-2-1.6-3.3C23 3 26.2 4 30 5c-3.8 1-7 2-9.4 4 0-1.2.6-2 1.7-3.4H0z"/></svg>
           </a>
         </div>
       </article>     
        
       <article class="project-block  project-block--all  row">
+        <h2 class="sr-only">Все наши проекты</h2>
         <a class="project-block__button  project-block__button--all">Все наши проекты
-          <svg class="project-block__button-arrow" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="9" viewBox="0 0 30 9"><path d="M1628.01 2450.3H1650.22C1649.15 2449 1648.6200000000001 2448.15 1648.56 2446.9900000000002C1651 2448.9900000000002 1654.1599999999999 2450.0200000000004 1657.99 2451.0000000000005C1654.16 2451.9300000000003 1651.14 2453.0700000000006 1648.56 2455.0000000000005C1648.73 2453.7500000000005 1649.1699999999998 2452.9900000000002 1650.26 2451.6100000000006H1628.01Z " fill="#ffffff" transform="matrix(1,0,0,1,-1628,-2446)"></path></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" class="project-block__button-arrow" viewBox="0 0 30 9"><path fill="#ffffff" d="M0 4.3h22.2c-1-1.3-1.6-2-1.6-3.3C23 3 26.2 4 30 5c-3.8 1-7 2-9.4 4 0-1.2.6-2 1.7-3.4H0z"/></svg>
         </a>
+        
+        <svg class="project-block__figure" xmlns="http://www.w3.org/2000/svg" width="27" height="24" viewBox="0 0 27 24"><path fill="#3498db" d="M14 24L1 1h26zM4.2 3L14 20l9.5-17z"/></svg>
+        <svg class="project-block__figure" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"><path fill="#e74c3c" d="M22.5 19c-4.7 4.8-12.2 4.8-17 0C1 14.6 1 7 5.6 2.4L4.3 1c-5.4 5.3-5.4 14 0 19.5C9.7 26 18.4 26 24 20.5z"/></svg>
+        <svg class="project-block__figure" xmlns="http://www.w3.org/2000/svg" width="25" height="27" viewBox="0 0 25 27"><path fill="#8eb021" d="M.5 27L2.5.5 24 15zM4.3 4L2.7 23.6 20 15z"/></svg>
+        <svg class="project-block__figure" xmlns="http://www.w3.org/2000/svg" width="19" height="28" viewBox="0 0 19 28"><path fill="#ffcd02" d="M.7 3.3c6.2-2 13 1.4 15 7.7 2 6.2-1.5 13-7.7 15l.6 1.8c7.2-2.3 11.2-10 9-17.4C15 3 7.2-1 0 1.4z"/></svg>
+        <svg class="project-block__figure" xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31"><path fill="#8eb021" d="M30.8 24.3L6.6 30.8.2 6.6l24-6.4zM8 28.3L28.4 23 23 2.5 2.5 8z"/></svg>
+        
       </article>
       
     </section> <!-- конец container-fluid -->
@@ -170,32 +174,32 @@
       </header>
       
       <div class="reasons__row  row">
-        <article class="reasons__item  col-md-4">
+        <article class="reasons__item  col-xs-12 col-sm-4">
           <h3 class="reasons__item-header">Профессионализм</h3>
           <p class="reasons__item-description">Мы нацелены развить ваш бизнес за счет технических решений, а не просто выполнить техническое задание.</p>
         </article>
-        <article class="reasons__item  col-md-4">
+        <article class="reasons__item  col-xs-12 col-sm-4">
           <h3 class="reasons__item-header">Актуальность решений</h3>
           <p class="reasons__item-description">Мы заботимся о том, чтобы ваш продукт оставался актуальным долгие годы, разрабатывая адаптивные<br> и масштабируемые решения.</p>
         </article>
-        <article class="reasons__item  col-md-4">
+        <article class="reasons__item  col-xs-12 col-sm-4">
           <h3 class="reasons__item-header">Победы</h3>
-          <p class="reasons__item-description">На нашем счету более 30 призовых мест в российских и международных ведущих отраслевых конкурсах <nobr>веб-разработки.</nobr></p>
+          <p class="reasons__item-description">На нашем счету более 30 призовых мест в российских и международных ведущих отраслевых конкурсах <span class="nobr">веб-разработки.</span></p>
         </article>
       </div> <!-- конец row --> 
       
       <div class="reasons__row  row">
-        <article class="reasons__item  col-md-4">
+        <article class="reasons__item  col-xs-12 col-sm-4">
           <h3 class="reasons__item-header">Прозрачность</h3>
           <p class="reasons__item-description">Сроки и бюджет разработки открыты и предсказуемы — мы заботимся об этом еще на этапе подписания договора.</p>
         </article>
-        <article class="reasons__item  col-md-4">
+        <article class="reasons__item  col-xs-12 col-sm-4">
           <h3 class="reasons__item-header">Опыт работы с highload проектами</h3>
           <p class="reasons__item-description">Мы разрабатываем веб-сервисы, способные выдерживать высокие нагрузки (до 10000 запросов/сек) и обеспечивать поддержку растущего количества пользователей.</p>
         </article>
-        <article class="reasons__item  col-md-4">
+        <article class="reasons__item  col-xs-12 col-sm-4">
           <h3 class="reasons__item-header">Использование fullstack технологий</h3>
-          <p class="reasons__item-description">Мы открыты к новым технологиям, понимаем каждую из них и имеем представление о том, как развить <nobr>веб-приложение</nobr> от стадии проектирования до готового продукта.</p>
+          <p class="reasons__item-description">Мы открыты к новым технологиям, понимаем каждую из них и имеем представление о том, как развить <span class="nobr">веб-приложение</span> от стадии проектирования до готового продукта.</p>
         </article>
         
       </div>  <!-- конец row --> 
@@ -208,51 +212,51 @@
         
         <h2 class="customers__header  col-xs-12">Наши клиенты</h2>
         
-        <div class="customers__item  col-lg-3">          
+        <div class="customers__item  col-xxs-4 col-xs-3">          
           <img src="img/logo-tinkoff.png" alt="Тинькофф Банк" class="customers__logo">
         </div>
         
-        <div class="customers__item  col-lg-3">          
+        <div class="customers__item  col-xxs-4 col-xs-3">          
           <img src="img/logo-gazprom.png" alt="Газпром" class="customers__logo  customers__logo--gazprom">
         </div>
         
-        <div class="customers__item  col-lg-3">          
+        <div class="customers__item  col-xxs-4 col-xs-3">          
           <img src="img/logo-mu.png" alt="Manchester United" class="customers__logo">
         </div>
         
-        <div class="customers__item  col-lg-3">          
+        <div class="customers__item  col-xxs-4 col-xs-3">          
           <img src="img/logo-hermitage.png" alt="Эрмитаж" class="customers__logo">
         </div>
         
-        <div class="customers__item  col-lg-3">          
+        <div class="customers__item  col-xxs-4 col-xs-3">          
           <img src="img/logo-moleskine.png" alt="Moleskine" class="customers__logo">
         </div>
         
-        <div class="customers__item  col-lg-3">                  
+        <div class="customers__item  col-xxs-4 col-xs-3">                  
           <img src="img/logo-starbucks.png" alt="Starbucks" class="customers__logo">
         </div>
         
-        <div class="customers__item  col-lg-3">          
+        <div class="customers__item  col-xxs-4 col-xs-3">          
           <img src="img/logo-audi.png" alt="Audi" class="customers__logo">
         </div>
         
-        <div class="customers__item  col-lg-3">                  
+        <div class="customers__item  col-xxs-4 col-xs-3">                  
           <img src="img/logo-adidas.png" alt="Adidas" class="customers__logo">
         </div>
         
-        <div class="customers__item  col-lg-3">          
+        <div class="customers__item  col-xxs-4 col-xs-3">          
           <img src="img/logo-ginza.png" alt="Ginza Project" class="customers__logo  customers__logo--ginza">
         </div>
         
-        <div class="customers__item  col-lg-3">          
+        <div class="customers__item  col-xxs-4 col-xs-3">          
           <img src="img/logo-oscar.png" alt="Oscars" class="customers__logo">
         </div>
         
-        <div class="customers__item  col-lg-3">          
+        <div class="customers__item  col-xxs-4 col-xs-3">          
           <img src="img/logo-alfa.png" alt="Альфа Банк" class="customers__logo">
         </div>
         
-        <div class="customers__item  col-lg-3">          
+        <div class="customers__item  col-xxs-4 col-xs-3">          
           <img src="img/logo-showtime.png" alt="Showtime" class="customers__logo">
         </div>
         
@@ -265,22 +269,30 @@
       <section class="customers__slider-block  row">
         <div class="customers__slider  col-xs-12">
         
-          <article class="customers__slider-item  row">          
-            <div class="customers__video-container  col-lg-7">
+          <div class="customers__slider-item  row">          
+            <div class="customers__video-container  col-xs-7">
               <video class="customers__video"></video>
+              <span class="customers__video-button">Отзыв клиента</span>
             </div>
             
-            <div class="customers__slider-info  col-lg-5">
+            <div class="customers__slider-info  col-xs-5">
               <p class="customers__person">Говард Шульц<br>
               <span class="customers__post">председатель совета директоров, главный управляющий и президент компании Starbucks</span></p>              
             </div>
-          </article>               
+          </div>               
                   
           <button class="customers__slider-button  customers__slider-button--previous"></button>
           <button class="customers__slider-button  customers__slider-button--next"></button>        
           
         </div>  <!-- конец customers__slider -->
       </section> <!-- конец row -->             
+      
+      <svg class="customers__figure" xmlns="http://www.w3.org/2000/svg" height="31" width="31" viewBox="0 0 31 31"><path fill="#e6e6e6" d="M30.8 24.3L6.6 30.8.2 6.6l24-6.4zM8 28.3L28.4 23 23 2.5 2.5 8z"/></svg>
+      <svg class="customers__figure" xmlns="http://www.w3.org/2000/svg" height="24" width="25" viewBox="0 0 24 25"><path fill="#e6e6e6" d="M22.5 19c-4.7 4.8-12.2 4.8-17 0C1 14.6 1 7 5.6 2.4L4.3 1c-5.4 5.3-5.4 14 0 19.5C9.7 26 18.4 26 24 20.5z"/></svg>
+      <svg class="customers__figure" xmlns="http://www.w3.org/2000/svg" height="19" width="28" viewBox="0 0 19 28"><path fill="#e6e6e6" d="M.7 3.3c6.2-2 13 1.5 15 7.7S14 24 8 26l.6 1.8c7.2-2.3 11.2-10 9-17.4C15 3 7.2-1 0 1.4z"/></svg>
+      <svg class="customers__figure" xmlns="http://www.w3.org/2000/svg" height="25" width="27" viewBox="0 0 25 27"><path fill="#e6e6e6" d="M.5 27L2.5.5 24 15zM4.3 4L2.8 23.6 20 15z"/></svg>
+      <svg class="customers__figure" xmlns="http://www.w3.org/2000/svg" height="27" width="24" viewBox="0 0 27 24"><path fill="#e6e6e6" d="M14 24L1 1h26zM4.2 3L14 20l9.5-17z"/></svg>      
+      
     </section> <!-- конец container-fluid -->
     
     <section class="page-footer">      
@@ -288,20 +300,26 @@
         <h2 class="page-footer__header">Вы уже хотите пообщаться с нами?</h2>
         <p class="page-footer__mail">hello@iwant.com</p>
         <p class="page-footer__phone">8 (800) 600 90 90</p>
+        
+        <svg class="page-footer__figure" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"><path fill="#e74c3c" d="M22.5 19c-4.7 4.8-12.2 4.8-17 0C1 14.6 1 7 5.6 2.4L4.3 1c-5.4 5.3-5.4 14 0 19.5C9.7 26 18.4 26 24 20.5z"/></svg>
+        <svg class="page-footer__figure" xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31"><path fill="#8eb021" d="M30.8 24.3L6.6 30.8.2 6.6l24-6.4zM8 28.3L28.4 23 23 2.5 2.5 8z"/></svg>
+        <svg class="page-footer__figure" xmlns="http://www.w3.org/2000/svg" width="25" height="27" viewBox="0 0 25 27"><path fill="#8eb021" d="M.5 27L2.5.5 24 15.2zM4.3 4L2.8 23.6 20 15z"/></svg>
+        <svg class="page-footer__figure" xmlns="http://www.w3.org/2000/svg" width="27" height="24" viewBox="0 0 27 24"><path fill="#3498db" d="M14 24L1 1h26zM4.2 3L14 20l9.5-17z"/></svg>
+        <svg class="page-footer__figure" xmlns="http://www.w3.org/2000/svg" width="19" height="28" viewBox="0 0 19 28"><path fill="#ffcd02" d="M.7 3.3c6.2-2 13 1.5 15 7.7S14 24 8 26l.6 1.8c7.2-2.3 11.2-10 9-17.4C15 3 7.2-1 0 1.4z"/></svg>
       </div> <!-- конец container-fluid -->
         
       <div class="page-footer__social  container-fluid">
         <ul class="page-footer__social-list  row">
           <li class="page-footer__social-icon"><a href="#" class="page-footer__social-link  page-footer__social-link--behance"></a></li>
-          <li class="page-footer__social-icon"><a href="#" class="page-footer__social-link"></a></li>
-          <li class="page-footer__social-icon"><a href="#" class="page-footer__social-link"></a></li>
-          <li class="page-footer__social-icon"><a href="#" class="page-footer__social-link"></a></li>            
+          <li class="page-footer__social-icon"><a href="#" class="page-footer__social-link  page-footer__social-link--dribble"></a></li>
+          <li class="page-footer__social-icon"><a href="#" class="page-footer__social-link  page-footer__social-link--vk"></a></li>
+          <li class="page-footer__social-icon"><a href="#" class="page-footer__social-link  page-footer__social-link--facebook"></a></li>            
         </ul>
       </div> <!-- конец container-fluid -->          
     </section>
 
-        <script src="js/vendor/jquery-1.11.2.min.js"></script>
-        <script src="js/vendor/bootstrap.min.js"></script>
+        <!-- <script src="js/vendor/jquery-1.11.2.min.js"></script> -->
+        <!-- <script src="js/vendor/bootstrap.min.js"></script> -->
         <script src="js/vendor/smoothscroll.js"></script>
         <script src="js/main.js"></script>
     </body>

@@ -3,7 +3,7 @@
   
   &--gazprom {
     background-color: #bdcbd7;
-  }
+  }   
   &--tinkoff {
     background-color: #fed500;    
   }
@@ -12,18 +12,33 @@
   }
   &--all {
     z-index: 20;
+    overflow: hidden;
     
-    min-height: 15.2em;
+    min-height: 10em;
     
-    background-color: #303030;    
+    background-color: #303030;
+    
+    @media (min-width: @screen-lg) {
+      min-height: 15.2em;
+    }    
+  }  
+  @media (max-width: 479px) {
+    padding-top: 180px;
   }
-  
+
   @media (min-width: @screen-md) {
-    margin-left: @custom-container-padding * -1;
-    margin-right: @custom-container-padding * -1;
+    margin-left: @custom-container-padding * -0.5;
+    margin-right: @custom-container-padding * -0.5;
     
-    padding-left: @custom-container-padding;
+    padding-left: @custom-container-padding * 0.5;
+    padding-right: @custom-container-padding * 0.5;
+  }  
+  @media (min-width: @screen-xl) {
+    margin-right: @custom-container-padding * -1;
+    margin-left: @custom-container-padding * -1;
+    
     padding-right: @custom-container-padding;
+    padding-left: @custom-container-padding;    
   }
 }
 
@@ -34,21 +49,54 @@
   width: 50%;
   
   &--gazprom {
-    top: 8%; left: 0; 
-    
+    top: 8%; left: 0;     
     width: 66.8%;
   }
   &--tinkoff {
-    top:0; right: 0;
-        
+    top:0; right: 0;        
     width: 100%;
   }
   &--adidas {
-    top: 17.5%; left: 0;
-    
+    top: 17.5%; left: 0;    
     width: 37.5%;
   }
   
+  @media (max-width: @screen-xs) {
+    &--gazprom {
+      width: 90%;
+    }
+    &--tinkoff {
+      width: 140%;
+    }
+    &--adidas {
+      top: 5px;
+      width: 80%;
+    }
+  }  
+  @media (min-width: @screen-sm) {
+    &--gazprom {
+      top: 15%; left: 0;       
+      width: 60%;
+    }
+    &--tinkoff {
+      top: 15%; right: 0;          
+      width: 100%;
+    }
+    &--adidas {
+      top: 17.5%; left: 0;      
+      width: 37.5%;
+    }
+  }
+  @media (min-width: @screen-lg) {
+    &--gazprom {
+      top: 8%; left: 0;       
+      width: 66.8%;
+    }
+    &--tinkoff {
+      top:0; right: 0;          
+      width: 100%;
+    }
+  }  
 }
 
 .project-block__info {
@@ -58,68 +106,115 @@
   margin-top: 15%;
   margin-bottom: 15%;
     
-  &--gazprom {
-    margin-top: 14.5%;
-    margin-bottom: 18.52%;
-    padding-right: 0;
-    padding-left: 49px;  
-  }  
-  &--tinkoff {
-    margin-top: 9.8%;
-    margin-bottom: 13.8%;
-    padding-left: 4px;
+  @media (min-width: @screen-hd) {
+    &--gazprom {
+      margin-top: 14.5%;
+      margin-bottom: 18.52%;
+      padding-right: 0;
+    }  
+    &--tinkoff {
+      margin-top: 9.8%;
+      margin-bottom: 13.8%;
+      padding-left: 4px;
+    }
+    &--adidas {
+      margin-top: 13%;
+      margin-bottom: 16.9%;
+      padding-left: 7.1%;
+    }
   }
-  &--adidas {
-    margin-top: 13%;
-    margin-bottom: 16.9%;
-    padding-left: 7.1%;
+  @media (min-width: 1900px) {
+    &--gazprom {
+      padding-left: 49px;  
+    }  
   }
+
 }
 
 .project-block__header {
   margin-left: -1px;
   margin-bottom: 25px;
   
-  font-size: 48px;
-  line-height: 110px;  
+  font-size: 30px;
+  line-height: 35px;  
+  
+  @media (min-width: @screen-xl) {
+    margin-bottom: 2em;
+    
+    font-size: 35px;
+    line-height: 37px;  
+  }  
+  @media (min-width: @screen-hd) {
+    margin-bottom: 25px;
+    
+    font-size: 48px;
+    line-height: 110px;  
+  }
 }
 
 .project-block__list {
-  margin-bottom: 5em;
+  margin-bottom: 2em;
   padding-left: 0;
   
   list-style: none;
+  
+  @media (min-width: @screen-xl) {
+    margin-bottom: 5em;
+  }
 }
 .project-block__list-item {
   margin-bottom: 0.65em;
   
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 300;
-  line-height: 34px;
+  line-height: 18px;  
+  
+  @media (min-width: @screen-md) {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  @media (min-width: @screen-xl) {
+    font-size: 24px;
+    line-height: 34px;
+  }
 }
 
 .project-block__button {
   position: relative;
   
   display: inline-block;
-  padding-top: 1.1em;
-  padding-right: 3.1em;
-  padding-bottom: 1.1em;
-  padding-left: 1.3em;
+  padding: 0.7em 0.5em;
+  padding-right: 2.6em;
   
-  font-size: 22px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 18px;
   letter-spacing: 0.3px;
   color: black;
   
-  border: 2px solid black;
+  border: 1px solid black;
   border-radius: 0;
   background-color: transparent;
   
   user-select: none;
   cursor: pointer;
   transition: all 0.2s ease-in-out;  
+  
+  @media (min-width: @screen-md) {
+    padding-top: 1.1em;
+    padding-right: 3.1em;
+    padding-bottom: 1.1em;
+    padding-left: 1.3em;
+    
+    font-size: 20px;
+    line-height: 18px;
 
+    border-width: 2px;
+  }
+  @media (min-width: @screen-xl) {
+    font-size: 22px;
+    line-height: 20px;
+  }
+  
   &:link, &:visited {
     color: black;
     text-decoration: none;
@@ -156,12 +251,50 @@
 
 .project-block__button-arrow {
   position: absolute;
-  right: 0.5em; top: 50%;
+  right: 0.3em; top: 50%;
   transform: translateY(-50%);
   
-  width: 2.5em;
-  height: 10px;
+  width: 2em;
+  height: 8px;
   
-  transition: all 0.2s ease-in-out;  
+  @media (min-width: @screen-lg) {
+    right: 0.5em;
+
+    width: 2.5em;
+    height: 10px;
+  }    
 }
 
+.project-block__figure {
+  position: absolute;
+    
+  &:nth-of-type(odd) {
+    animation: rotating 20s linear infinite;
+  }
+  &:nth-of-type(even) {
+    animation: rotating-back 10s linear infinite;  
+  }
+  
+  &:nth-of-type(1) {
+    left: 3.2%; top: 35%;
+  }
+  &:nth-of-type(2) {
+    left: 20.3%; top: 59%;
+  }
+  &:nth-of-type(3) {
+    left: 30.6%; top: -5%;
+  }
+  &:nth-of-type(4) {
+    left: 76.7%; top: 36%;
+  }
+  &:nth-of-type(5) {
+    right: 4%; top: 58%;
+  }   
+
+  @media (max-width: @screen-md-max) {
+    &:nth-of-type(2),
+    &:nth-of-type(4) {
+      display: none;
+    }
+  }
+}
